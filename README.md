@@ -26,10 +26,6 @@ git clone https://github.com/severabdullayeva/orbit.git
 
 3. Run `index.html` using Live Server or open it in your browser.
 
-## 📷 Screenshots
-
-_Add project screenshots here._
-
 ## 👩‍💻 Author
 
 Sevər Abdullayeva
