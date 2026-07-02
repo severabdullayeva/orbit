@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Orbit</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,14 +17,22 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="./styl.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <nav class="navbar">
         <div class="container d-flex justify-content-center">
             <div class="nav-wrapper d-flex align-items-center justify-content-between w-100 ">
+
                 <a href="#" class="nav-logo">JA</a>
+
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
 
                 <ul class="nav-menu list-unstyled flex-grow-1">
 
@@ -64,9 +72,7 @@
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <a href="#" class="burger-menu">
-                    <span><i class="bi bi-list"></i></span>
-                </a>
+
             </div>
 
         </div>
@@ -176,8 +182,9 @@
                 </div>
             </div>
             <div class="filters">
-                <ul class="list-unstyled d-flex justify-content-center gap-5" data-aos="fade-up" data-aos-delay="0">
-                    <li>All</li>
+                <ul class="list list-unstyled d-flex justify-content-center gap-5" data-aos="fade-up"
+                    data-aos-delay="0">
+                    <li class="all">All</li>
                     <li>Packaging</li>
                     <li>Mockup</li>
                     <li>Typography</li>
@@ -188,19 +195,19 @@
             <div class="filters-content mt-5" data-aos="fade-up" data-aos-delay="0">
                 <div class="row image-section">
                     <div class="col">
-                        <div class="image"><img src="./img/work_5.jpg.webp" alt="" class="img-fluid">
+                        <div class="image item mockup"><img src="./img/work_5.jpg.webp" alt="" class="img-fluid">
                             <div class="contents">
                                 <h3>Card Vol. 3</h3>
                                 <div>Mockup</div>
                             </div>
                         </div>
-                        <div class="image"><img src="./img/work_3.jpg.webp" alt="" class="img-fluid">
+                        <div class="image item packaging"><img src="./img/work_3.jpg.webp" alt="" class="img-fluid">
                             <div class="contents">
                                 <h3>Seat</h3>
                                 <div>Packaging</div>
                             </div>
                         </div>
-                        <div class="image"><img src="./img/work_4.jpg.webp" alt="" class="img-fluid">
+                        <div class="image item packaging"><img src="./img/work_4.jpg.webp" alt="" class="img-fluid">
                             <div class="contents">
                                 <h3>Seat</h3>
                                 <div>Packaging</div>
@@ -208,13 +215,13 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="image"><img src="./img/work_1.jpg.webp" alt="" class="img-fluid">
+                        <div class="image item typography"><img src="./img/work_1.jpg.webp" alt="" class="img-fluid">
                             <div class="contents">
                                 <h3>House Design</h3>
                                 <div>Typography</div>
                             </div>
                         </div>
-                        <div class="image"><img src="./img/work_7.jpg.webp" alt="" class="img-fluid">
+                        <div class="image item photography"><img src="./img/work_7.jpg.webp" alt="" class="img-fluid">
                             <div class="contents">
                                 <h3>House Design</h3>
                                 <div>Photography</div>
@@ -222,13 +229,13 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="image"><img src="./img/work_2.jpg.webp" alt="" class="img-fluid">
+                        <div class="image item typography"><img src="./img/work_2.jpg.webp" alt="" class="img-fluid">
                             <div class="contents">
                                 <h3>WoW</h3>
                                 <div>Typography</div>
                             </div>
                         </div>
-                        <div class="image"><img src="./img/work_6.jpg.webp" alt="" class="img-fluid">
+                        <div class="image item photography"><img src="./img/work_6.jpg.webp" alt="" class="img-fluid">
                             <div class="contents">
                                 <h3>House Design</h3>
                                 <div>Photography</div>
@@ -856,6 +863,9 @@
             </p>
         </div>
     </footer>
+
+    <script src="app.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
